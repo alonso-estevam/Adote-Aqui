@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 20px;
+}
+
+header {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 3px;
+    color: #9e0101; /* Não aplicou aos itens do menu de navegação, por quê? */
+    background-color: #ffd4ac;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.menu-itens {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /* Não funcionou quando coloquei no .menu-itens li a */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-itens li a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: #9e0101;
+}
+
+/* Para mudar a cor e o tamanho do título na logo */
+h1:hover {
+    color: #FF6584;
+    font-size: 2.3em;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Para mudar a cor dos itens no menu de navegação */
+.menu-itens li a:hover {
+    color: #FF6584;
+    transition: 0.3s;
+}
+
+main {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.img-principal {
+    width: 35%;
+    float: left;
+    border: 1px solid #FF6584;
+    margin-right: 30px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+}
+
+footer {
+    background-color: #ffd4ac;
+    height: 60px;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 12px;
+}
+
+@media (max-width: 700px) {
+    .logo {
+        display: none;
+    }
+
+    .menu-itens {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+}
